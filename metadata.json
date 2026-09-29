@@ -1,0 +1,6 @@
+{
+  "name": "信用金庫 用品管理システム",
+  "description": "信用金庫の営業店と本部をつなぐ、一般消耗品および厳格管理品（通帳等）の発注・承認・在庫管理システム",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

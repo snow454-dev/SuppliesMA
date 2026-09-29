@@ -36,6 +36,22 @@ Pythonの **Streamlit** で即座に単体実行できる完全なスクリプ�
 
 ---
 
+## 🌐 GitHub Pages でのウェブ公開手順 (完全無料)
+
+本リポジトリは、GitHub Pages を利用して誰でもブラウザからアクセス可能なWebアプリ（SPA）として公開できます。
+
+### 方法1：GitHub Actions 自動デプロイ（推奨）
+1. 本リポジトリの **Settings** > **Pages** を開きます。
+2. **Build and deployment** の **Source** で **「GitHub Actions」** を選択します。
+3. リポジトリ内の `.github/workflows/deploy.yml` により、コミット時に自動ビルド＆デプロイが実行されます。
+4. 数分後、`https://<ユーザー名>.github.io/SuppliesMA/` にアクセスすればWebアプリが稼働します。
+
+### 方法2：ビルド済み静的ファイル（dist）の直接配置
+1. `npm run build` で生成される `dist/` 内の `index.html` および `assets/` フォルダをリポジトリのルートまたは `gh-pages` ブランチに配置します。
+2. **Settings** > **Pages** で **Source** を **「Deploy from a branch」** に設定し、該当ブランチ（`main` または `gh-pages`）を選択して保存します。
+
+---
+
 ## 🚀 ローカル環境での起動方法 (Streamlit)
 
 Python 3.9以上がインストールされた環境で以下を実行してください。
